@@ -9,10 +9,9 @@ rpm-ostree override remove \
            gnome-tour \
     && \
     rpm-ostree install \
-               docker-buildx-plugin \
-               docker-ce \
-               docker-ce-cli \
+               docker-cli \
                docker-compose-plugin \
+               docker-buildx-plugin \
                input-remapper \
                google-noto-fonts-all \
                mg \
