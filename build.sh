@@ -10,8 +10,8 @@ rpm-ostree override remove \
     && \
     rpm-ostree install \
                docker-cli \
-               docker-compose-plugin \
-               docker-buildx-plugin \
+               docker-compose \
+               docker-buildx \
                input-remapper \
                google-noto-fonts-all \
                mg \
