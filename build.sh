@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 ### Configure packages
-rpm-ostree override remove firefox firefox-langpacks vim
-rpm-ostree install tmux mg
+rpm-ostree override remove firefox firefox-langpacks \
+           && rpm-ostree install mg
 
 systemctl enable podman.socket
