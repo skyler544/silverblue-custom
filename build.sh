@@ -9,14 +9,11 @@ rpm-ostree override remove \
            gnome-tour \
     && \
     rpm-ostree install \
-               docker-cli \
-               docker-compose \
-               docker-buildx \
                input-remapper \
                google-noto-fonts-all \
                mg \
+               podman-docker \
                podman-compose
 
-systemctl enable docker.socket
 systemctl enable input-remapper
 systemctl enable podman.socket
