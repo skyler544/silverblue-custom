@@ -4,6 +4,8 @@ set -ouex pipefail
 
 ### Configure packages
 rpm-ostree override remove \
+           default-fonts-core-emoji \
+           google-noto-color-emoji-fonts \
            gnome-tour \
            yaru-theme \
            yaru-gtk2-theme \
@@ -15,4 +17,5 @@ rpm-ostree override remove \
            gnome-shell-theme-yaru \
     && \
     rpm-ostree install \
+               google-noto-emoji-fonts \
                mg
