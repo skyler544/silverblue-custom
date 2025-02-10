@@ -6,6 +6,7 @@ set -ouex pipefail
 rpm-ostree override remove \
            gnome-tour \
            yaru-theme \
+           gnome-shell-theme-yaru \
     && \
     rpm-ostree install \
                mg
