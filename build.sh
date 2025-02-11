@@ -20,5 +20,6 @@ rpm-ostree override remove \
                papirus-icon-theme \
                papirus-icon-theme-light \
                papirus-icon-theme-dark \
+               wl-clipboard \
                google-noto-emoji-fonts \
                mg
