@@ -17,5 +17,8 @@ rpm-ostree override remove \
            gnome-shell-theme-yaru \
     && \
     rpm-ostree install \
+               papirus-icon-theme \
+               papirus-icon-theme-light \
+               papirus-icon-theme-dark \
                google-noto-emoji-fonts \
                mg
