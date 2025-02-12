@@ -2,6 +2,8 @@
 
 set -ouex pipefail
 
+dnf -y copr enable alternateved/bleeding-emacs
+
 ### Configure packages
 rpm-ostree override remove \
            default-fonts-core-emoji \
@@ -22,4 +24,7 @@ rpm-ostree override remove \
                papirus-icon-theme-dark \
                wl-clipboard \
                google-noto-emoji-fonts \
+               emacs \
                mg
+
+dnf -y copr disable alternateved/bleeding-emacs
