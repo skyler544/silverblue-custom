@@ -6,6 +6,7 @@ dnf -y copr enable alternateved/bleeding-emacs
 
 ### Configure packages
 rpm-ostree override remove \
+           cascadia-code-fonts \
            default-fonts-core-emoji \
            gnome-shell-theme-yaru \
            gnome-tour \
