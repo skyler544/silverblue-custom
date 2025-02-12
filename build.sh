@@ -25,6 +25,7 @@ rpm-ostree override remove \
                wl-clipboard \
                google-noto-emoji-fonts \
                emacs \
+               pinentry-emacs \
                mg
 
 dnf -y copr disable alternateved/bleeding-emacs
