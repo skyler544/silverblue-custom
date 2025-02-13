@@ -11,6 +11,7 @@ rpm-ostree override remove \
            gnome-shell-theme-yaru \
            gnome-tour \
            google-noto-color-emoji-fonts \
+           solaar \
            yaru-gtk2-theme \
            yaru-gtk3-theme \
            yaru-gtk4-theme \
