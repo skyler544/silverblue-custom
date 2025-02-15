@@ -26,6 +26,7 @@ INCLUDED_PACKAGES=(
     papirus-icon-theme
     papirus-icon-theme-dark
     papirus-icon-theme-light
+    stow
     wl-clipboard
 )
 
