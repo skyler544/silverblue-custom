@@ -3,6 +3,8 @@
 set -ouex pipefail
 
 
+# PACKAGES
+# ----------------------------------------------------
 EXCLUDED_PACKAGES=(
     cascadia-code-fonts
     default-fonts-core-emoji
@@ -37,3 +39,10 @@ rpm-ostree override remove "${EXCLUDED_PACKAGES[@]}"
 rpm-ostree install "${INCLUDED_PACKAGES[@]}"
 
 dnf -y copr disable alternateved/bleeding-emacs
+
+
+# BLUEFIN OVERRIDES
+# ----------------------------------------------------
+rm -rf '/usr/share/fonts/MesloLGS NF/'
+rm -rf '/usr/share/fonts/monaspace/'
+fc-cache -f
