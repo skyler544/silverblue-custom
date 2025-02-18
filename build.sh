@@ -36,6 +36,8 @@ INCLUDED_PACKAGES=(
     papirus-icon-theme-dark
     papirus-icon-theme-light
     stow
+    zathura
+    zathura-pdf-poppler
     wl-clipboard
 )
 
