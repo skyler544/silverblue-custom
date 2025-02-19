@@ -55,3 +55,8 @@ dnf -y copr disable alternateved/bleeding-emacs
 rm -rf '/usr/share/fonts/MesloLGS NF/'
 rm -rf '/usr/share/fonts/monaspace/'
 fc-cache -f
+
+PLYMOUTH_DIR=/usr/share/plymouth/themes/spinner
+rm $PLYMOUTH_DIR/{silverblue-,}watermark.png
+cp /tmp/fedora-watermark.png $PLYMOUTH_DIR/watermark.png
+cp /tmp/fedora-watermark.png $PLYMOUTH_DIR/silverblue-watermark.png
