@@ -16,6 +16,8 @@ FROM ghcr.io/ublue-os/bluefin-dx:stable
 COPY build.sh /tmp/build.sh
 COPY fedora-watermark.png /tmp/fedora-watermark.png
 
+RUN rpm-ostree cliwrap install-to-root /
+
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
     ostree container commit
