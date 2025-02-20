@@ -58,10 +58,23 @@ fc-cache -f
 
 PLYMOUTH_DIR=/usr/share/plymouth/themes/spinner
 PIXMAP_DIR=/usr/share/pixmaps
-# rm $PLYMOUTH_DIR/{silverblue-,}watermark.png
-cp /tmp/fedora-watermark.png $PLYMOUTH_DIR/watermark.png
-cp /tmp/fedora-watermark.png $PLYMOUTH_DIR/silverblue-watermark.png
-cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora-gdm-logo.png
-cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora-logo.png
-cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora_logo_med.png
-cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora_whitelogo_med.png
+
+watermark_files=(
+    "$PLYMOUTH_DIR/watermark.png"
+    "$PLYMOUTH_DIR/silverblue-watermark.png"
+)
+
+logo_files=(
+    "$PIXMAP_DIR/fedora-gdm-logo.png"
+    "$PIXMAP_DIR/fedora-logo.png"
+    "$PIXMAP_DIR/fedora_logo_med.png"
+    "$PIXMAP_DIR/fedora_whitelogo_med.png"
+)
+
+for target in "${watermark_files[@]}"; do
+    cp /tmp/fedora-watermark.png "$target"
+done
+
+for target in "${logo_files[@]}"; do
+    cp /tmp/fedora_whitelogo_med.png "$target"
+done
