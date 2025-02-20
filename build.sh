@@ -57,6 +57,11 @@ rm -rf '/usr/share/fonts/monaspace/'
 fc-cache -f
 
 PLYMOUTH_DIR=/usr/share/plymouth/themes/spinner
-rm $PLYMOUTH_DIR/{silverblue-,}watermark.png
+PIXMAP_DIR=/usr/share/pixmaps
+# rm $PLYMOUTH_DIR/{silverblue-,}watermark.png
 cp /tmp/fedora-watermark.png $PLYMOUTH_DIR/watermark.png
 cp /tmp/fedora-watermark.png $PLYMOUTH_DIR/silverblue-watermark.png
+cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora-gdm-logo.png
+cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora-logo.png
+cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora_logo_med.png
+cp /tmp/fedora_whitelogo_med.png $PIXMAP_DIR/fedora_whitelogo_med.png
