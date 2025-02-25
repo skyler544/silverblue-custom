@@ -42,12 +42,12 @@ INCLUDED_PACKAGES=(
 )
 
 
-dnf -y copr enable alternateved/bleeding-emacs
+dnf5 -y copr enable alternateved/bleeding-emacs
 
-rpm-ostree override remove "${EXCLUDED_PACKAGES[@]}"
-rpm-ostree install "${INCLUDED_PACKAGES[@]}"
+dnf5 remove -y "${EXCLUDED_PACKAGES[@]}"
+dnf5 install -y "${INCLUDED_PACKAGES[@]}"
 
-dnf -y copr disable alternateved/bleeding-emacs
+dnf5 -y copr disable alternateved/bleeding-emacs
 
 
 # BLUEFIN OVERRIDES
