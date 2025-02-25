@@ -35,9 +35,10 @@ INCLUDED_PACKAGES=(
     papirus-icon-theme-dark
     papirus-icon-theme-light
     stow
+    terminus-fonts-console
+    wl-clipboard
     zathura
     zathura-pdf-mupdf
-    wl-clipboard
 )
 
 
