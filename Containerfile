@@ -16,6 +16,7 @@ FROM ghcr.io/ublue-os/bluefin-dx:stable
 COPY build.sh /tmp/build.sh
 COPY fedora-watermark.png /tmp/fedora-watermark.png
 COPY fedora_whitelogo_med.png /tmp/fedora_whitelogo_med.png
+COPY mg /usr/bin/mg
 
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \

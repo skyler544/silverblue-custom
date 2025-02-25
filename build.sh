@@ -31,7 +31,6 @@ EXCLUDED_PACKAGES=(
 INCLUDED_PACKAGES=(
     emacs
     google-noto-emoji-fonts
-    mg
     papirus-icon-theme
     papirus-icon-theme-dark
     papirus-icon-theme-light
