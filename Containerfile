@@ -22,3 +22,6 @@ RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
     ostree container commit
     
+### LINTING
+## Verify final image and contents are correct.
+RUN bootc container lint
