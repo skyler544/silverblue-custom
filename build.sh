@@ -62,6 +62,8 @@ dnf5 -y copr enable alternateved/bleeding-emacs
 dnf5 remove -y "${EXCLUDED_PACKAGES[@]}"
 dnf5 install -y "${INCLUDED_PACKAGES[@]}"
 
+dnf5 swap -y bluefin-logos fedora-logos
+
 dnf5 -y copr disable alternateved/bleeding-emacs
 
 
