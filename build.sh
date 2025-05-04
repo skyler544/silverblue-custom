@@ -7,6 +7,9 @@ set -ouex pipefail
 # ----------------------------------------------------
 EXCLUDED_PACKAGES=(
     adobe-source-code-pro-fonts
+    bluefin-backgrounds
+    bluefin-cli-logos
+    bluefin-faces
     cascadia-code-fonts
     cockpit-bridge
     cockpit-machines
@@ -62,36 +65,13 @@ dnf5 -y copr enable alternateved/bleeding-emacs
 dnf5 remove -y "${EXCLUDED_PACKAGES[@]}"
 dnf5 install -y "${INCLUDED_PACKAGES[@]}"
 
-dnf5 swap -y bluefin-logos fedora-logos
-
 dnf5 -y copr disable alternateved/bleeding-emacs
 
 
 # BLUEFIN OVERRIDES
 # ----------------------------------------------------
+dnf5 swap -y bluefin-logos fedora-logos
+
 rm -rf '/usr/share/fonts/MesloLGS NF/'
 rm -rf '/usr/share/fonts/monaspace/'
 fc-cache -f
-
-PLYMOUTH_DIR=/usr/share/plymouth/themes/spinner
-PIXMAP_DIR=/usr/share/pixmaps
-
-watermark_files=(
-    "$PLYMOUTH_DIR/watermark.png"
-    "$PLYMOUTH_DIR/silverblue-watermark.png"
-)
-
-logo_files=(
-    "$PIXMAP_DIR/fedora-gdm-logo.png"
-    "$PIXMAP_DIR/fedora-logo.png"
-    "$PIXMAP_DIR/fedora_logo_med.png"
-    "$PIXMAP_DIR/fedora_whitelogo_med.png"
-)
-
-for target in "${watermark_files[@]}"; do
-    cp /tmp/fedora-watermark.png "$target"
-done
-
-for target in "${logo_files[@]}"; do
-    cp /tmp/fedora_whitelogo_med.png "$target"
-done
