@@ -8,7 +8,21 @@ set -ouex pipefail
 EXCLUDED_PACKAGES=(
     adobe-source-code-pro-fonts
     cascadia-code-fonts
+    cockpit-bridge
+    cockpit-machines
+    cockpit-networkmanager
+    cockpit-ostree
+    cockpit-podman
+    cockpit-selinux
+    cockpit-storaged
+    cockpit-system
     default-fonts-core-emoji
+    gnome-shell-extension-appindicator
+    gnome-shell-extension-blur-my-shell
+    gnome-shell-extension-dash-to-dock
+    gnome-shell-extension-gsconnect
+    gnome-shell-extension-logo-menu
+    gnome-shell-extension-tailscale-gnome-qs
     gnome-shell-theme-yaru
     gnome-tour
     google-go-mono-fonts
@@ -18,6 +32,7 @@ EXCLUDED_PACKAGES=(
     nerd-fonts
     opendyslexic-fonts
     solaar
+    tailscale
     ubuntu-family-fonts
     yaru-gtk2-theme
     yaru-gtk3-theme
