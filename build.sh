@@ -60,17 +60,17 @@ INCLUDED_PACKAGES=(
 )
 
 
-dnf5 -y copr enable alternateved/bleeding-emacs
+dnf -y copr enable alternateved/bleeding-emacs
 
-dnf5 remove -y "${EXCLUDED_PACKAGES[@]}"
-dnf5 install -y "${INCLUDED_PACKAGES[@]}"
+dnf remove -y "${EXCLUDED_PACKAGES[@]}"
+dnf install -y "${INCLUDED_PACKAGES[@]}"
 
-dnf5 -y copr disable alternateved/bleeding-emacs
+dnf -y copr disable alternateved/bleeding-emacs
 
 
 # BLUEFIN OVERRIDES
 # ----------------------------------------------------
-dnf5 swap -y bluefin-logos fedora-logos
+dnf swap -y bluefin-logos fedora-logos
 
 rm -rf '/usr/share/fonts/MesloLGS NF/'
 rm -rf '/usr/share/fonts/monaspace/'
