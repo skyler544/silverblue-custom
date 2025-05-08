@@ -10,7 +10,6 @@ EXCLUDED_PACKAGES=(
     bluefin-backgrounds
     bluefin-cli-logos
     bluefin-faces
-    cascadia-code-fonts
     cockpit-bridge
     cockpit-machines
     cockpit-networkmanager
@@ -28,15 +27,10 @@ EXCLUDED_PACKAGES=(
     gnome-shell-extension-tailscale-gnome-qs
     gnome-shell-theme-yaru
     gnome-tour
-    google-go-mono-fonts
     google-noto-color-emoji-fonts
-    ibm-plex-mono-fonts
-    mozilla-fira-mono-fonts
     nerd-fonts
     opendyslexic-fonts
-    solaar
     tailscale
-    ubuntu-family-fonts
     yaru-gtk2-theme
     yaru-gtk3-theme
     yaru-gtk4-theme
