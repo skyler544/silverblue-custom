@@ -6,7 +6,6 @@ set -ouex pipefail
 # PACKAGES
 # ----------------------------------------------------
 EXCLUDED_PACKAGES=(
-    adobe-source-code-pro-fonts
     bluefin-backgrounds
     bluefin-cli-logos
     bluefin-faces
@@ -28,8 +27,6 @@ EXCLUDED_PACKAGES=(
     gnome-shell-theme-yaru
     gnome-tour
     google-noto-color-emoji-fonts
-    nerd-fonts
-    opendyslexic-fonts
     tailscale
     yaru-gtk2-theme
     yaru-gtk3-theme
@@ -65,7 +62,3 @@ dnf -y copr disable alternateved/bleeding-emacs
 # BLUEFIN OVERRIDES
 # ----------------------------------------------------
 dnf swap -y bluefin-logos fedora-logos
-
-rm -rf '/usr/share/fonts/MesloLGS NF/'
-rm -rf '/usr/share/fonts/monaspace/'
-fc-cache -f
