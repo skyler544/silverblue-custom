@@ -6,6 +6,7 @@ set -ouex pipefail
 # PACKAGES
 # ----------------------------------------------------
 EXCLUDED_PACKAGES=(
+    bluefin-plymouth
     bluefin-backgrounds
     bluefin-cli-logos
     bluefin-faces
