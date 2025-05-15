@@ -2,9 +2,6 @@
 
 set -ouex pipefail
 
-
-# PACKAGES
-# ----------------------------------------------------
 EXCLUDED_PACKAGES=(
     bluefin-plymouth
     bluefin-backgrounds
@@ -51,15 +48,6 @@ INCLUDED_PACKAGES=(
     zathura-pdf-mupdf
 )
 
-
-dnf -y copr enable alternateved/bleeding-emacs
-
 dnf remove -y "${EXCLUDED_PACKAGES[@]}"
 dnf install -y "${INCLUDED_PACKAGES[@]}"
-
-dnf -y copr disable alternateved/bleeding-emacs
-
-
-# BLUEFIN OVERRIDES
-# ----------------------------------------------------
 dnf swap -y bluefin-logos fedora-logos
