@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# PREPARATION
+# ----------------------------------------------------
 set -ouex pipefail
+
+DNF="dnf --quiet --assumeyes"
 
 EXCLUDED_PACKAGES=(
     bluefin-plymouth
@@ -47,10 +51,17 @@ INCLUDED_PACKAGES=(
     zathura-pdf-mupdf
 )
 
-DNF="dnf --assumeyes"
 
+# PACKAGES
+# ----------------------------------------------------
 $DNF remove "${EXCLUDED_PACKAGES[@]}"
 $DNF install "${INCLUDED_PACKAGES[@]}"
 $DNF swap bluefin-logos fedora-logos
 
+
+# CLEANUP
+# ----------------------------------------------------
 $DNF autoremove && $DNF clean all
+rm -f /var/log/dnf*.log
+rm -rf /var/lib/dnf
+rm -rf /var/lib/alternatives
