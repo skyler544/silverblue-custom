@@ -7,10 +7,10 @@ set -ouex pipefail
 DNF="dnf --quiet --assumeyes"
 
 EXCLUDED_PACKAGES=(
-    bluefin-plymouth
     bluefin-backgrounds
     bluefin-cli-logos
     bluefin-faces
+    bluefin-plymouth
     cockpit-bridge
     cockpit-machines
     cockpit-networkmanager
@@ -29,6 +29,7 @@ EXCLUDED_PACKAGES=(
     gnome-shell-theme-yaru
     gnome-tour
     google-noto-color-emoji-fonts
+    malcontent-control
     tailscale
     yaru-gtk2-theme
     yaru-gtk3-theme
