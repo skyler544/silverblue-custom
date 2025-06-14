@@ -43,11 +43,14 @@ INCLUDED_PACKAGES=(
     papirus-icon-theme-light
     stow
     terminus-fonts-console
-    wl-clipboard
     zathura
     zathura-pdf-mupdf
 )
 
-dnf remove -y "${EXCLUDED_PACKAGES[@]}"
-dnf install -y "${INCLUDED_PACKAGES[@]}"
-dnf swap -y bluefin-logos fedora-logos
+DNF="dnf --assumeyes"
+
+$DNF remove "${EXCLUDED_PACKAGES[@]}"
+$DNF install "${INCLUDED_PACKAGES[@]}"
+$DNF swap bluefin-logos fedora-logos
+
+$DNF autoremove && $DNF clean
