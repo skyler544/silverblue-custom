@@ -53,4 +53,4 @@ $DNF remove "${EXCLUDED_PACKAGES[@]}"
 $DNF install "${INCLUDED_PACKAGES[@]}"
 $DNF swap bluefin-logos fedora-logos
 
-$DNF autoremove && $DNF clean
+$DNF autoremove && $DNF clean all
