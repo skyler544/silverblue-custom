@@ -42,6 +42,7 @@ EXCLUDED_PACKAGES=(
 
 INCLUDED_PACKAGES=(
     emacs
+    firefox
     google-noto-emoji-fonts
     papirus-icon-theme
     papirus-icon-theme-dark
