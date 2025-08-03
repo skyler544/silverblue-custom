@@ -41,6 +41,7 @@ EXCLUDED_PACKAGES=(
 )
 
 INCLUDED_PACKAGES=(
+    bootupd
     emacs
     google-noto-emoji-fonts
     papirus-icon-theme
