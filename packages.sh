@@ -25,6 +25,7 @@ EXCLUDED_PACKAGES=(
     gnome-shell-extension-dash-to-dock
     gnome-shell-extension-gsconnect
     gnome-shell-extension-logo-menu
+    gnome-shell-extension-search-light
     gnome-shell-extension-tailscale-gnome-qs
     gnome-shell-theme-yaru
     gnome-tour
