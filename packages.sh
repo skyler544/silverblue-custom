@@ -60,6 +60,14 @@ $DNF install "${INCLUDED_PACKAGES[@]}"
 $DNF swap bluefin-logos fedora-logos
 
 
+# LTS KERNEL
+# ----------------------------------------------------
+$DNF copr enable kwizart/kernel-longterm-6.12
+$DNF remove kernel kernel-*
+$DNF install kernel-longterm kernel-longterm-devel
+$DNF copr disable kwizart/kernel-longterm-6.12
+
+
 # CLEANUP
 # ----------------------------------------------------
 $DNF autoremove && $DNF clean all
