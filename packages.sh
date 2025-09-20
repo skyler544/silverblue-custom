@@ -48,7 +48,6 @@ INCLUDED_PACKAGES=(
     papirus-icon-theme-dark
     papirus-icon-theme-light
     terminus-fonts-console
-    wtype
     zathura
     zathura-pdf-mupdf
 )
