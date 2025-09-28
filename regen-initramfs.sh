@@ -6,6 +6,7 @@ OUTPUT_IMG="/lib/modules/$KVER/initramfs.img"
 MODULES="ostree bluetooth"
 
 dracut --force \
+       --verbose \
        --no-hostonly \
        --reproducible \
        --add "$MODULES" \
