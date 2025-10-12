@@ -44,7 +44,6 @@ EXCLUDED_PACKAGES=(
 INCLUDED_PACKAGES=(
     emacs
     evolution-ews
-    google-noto-emoji-fonts
     papirus-icon-theme
     papirus-icon-theme-dark
     papirus-icon-theme-light
