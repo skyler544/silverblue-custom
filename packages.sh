@@ -43,7 +43,7 @@ EXCLUDED_PACKAGES=(
 
 INCLUDED_PACKAGES=(
     emacs
-    evolution-ews
+    evolution-ews-core
     papirus-icon-theme
     papirus-icon-theme-dark
     papirus-icon-theme-light
