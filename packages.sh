@@ -43,7 +43,6 @@ EXCLUDED_PACKAGES=(
 
 INCLUDED_PACKAGES=(
     emacs
-    evolution-ews-core
     zathura
     zathura-pdf-mupdf
 )
