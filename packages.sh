@@ -44,10 +44,6 @@ EXCLUDED_PACKAGES=(
 INCLUDED_PACKAGES=(
     emacs
     evolution-ews-core
-    papirus-icon-theme
-    papirus-icon-theme-dark
-    papirus-icon-theme-light
-    terminus-fonts-console
     zathura
     zathura-pdf-mupdf
 )
