@@ -43,8 +43,6 @@ EXCLUDED_PACKAGES=(
 
 INCLUDED_PACKAGES=(
     emacs
-    zathura
-    zathura-pdf-mupdf
 )
 
 
