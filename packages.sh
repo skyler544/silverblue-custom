@@ -19,6 +19,7 @@ EXCLUDED_PACKAGES=(
     cockpit-selinux
     cockpit-storaged
     cockpit-system
+    code
     default-fonts-core-emoji
     gnome-shell-extension-appindicator
     gnome-shell-extension-blur-my-shell
