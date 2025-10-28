@@ -27,19 +27,10 @@ EXCLUDED_PACKAGES=(
     gnome-shell-extension-gsconnect
     gnome-shell-extension-logo-menu
     gnome-shell-extension-search-light
-    gnome-shell-extension-tailscale-gnome-qs
-    gnome-shell-theme-yaru
     gnome-tour
     google-noto-color-emoji-fonts
     malcontent-control
     tailscale
-    yaru-gtk2-theme
-    yaru-gtk3-theme
-    yaru-gtk4-theme
-    yaru-gtksourceview-theme
-    yaru-icon-theme
-    yaru-sound-theme
-    yaru-theme
 )
 
 INCLUDED_PACKAGES=(

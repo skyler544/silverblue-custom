@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/bluefin-dx:stable
+FROM ghcr.io/ublue-os/bluefin-dx:gts
 
 ### MODIFICATIONS
 ## Customizations to the base image
