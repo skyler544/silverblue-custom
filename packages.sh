@@ -21,12 +21,6 @@ EXCLUDED_PACKAGES=(
     cockpit-system
     code
     default-fonts-core-emoji
-    gnome-shell-extension-appindicator
-    gnome-shell-extension-blur-my-shell
-    gnome-shell-extension-dash-to-dock
-    gnome-shell-extension-gsconnect
-    gnome-shell-extension-logo-menu
-    gnome-shell-extension-search-light
     gnome-tour
     google-noto-color-emoji-fonts
     malcontent-control
