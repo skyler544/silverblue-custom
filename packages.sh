@@ -11,6 +11,7 @@ EXCLUDED_PACKAGES=(
     bluefin-cli-logos
     bluefin-faces
     bluefin-plymouth
+    cascadia-code-fonts
     cockpit-bridge
     cockpit-machines
     cockpit-networkmanager
